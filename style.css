@@ -1,0 +1,390 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700;800&display=swap');
+
+:root {
+    --background-blue : #063970;
+    --dark-blue : #003049;
+    --light-blue : #669BBC;
+    --beige : #FDF0D5;
+
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    user-select: none; 
+}
+
+body {
+    width: 100%;
+    height: 100%;
+    background-color: var(--background-blue);
+
+    font-family: 'Montserrat', sans-serif;
+    font-size: 62.5%;
+}
+
+header {
+    padding: 2em;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    color: var(--beige);
+}
+
+nav {
+    width: 90%;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+nav h2 {
+    font-size: 1.6rem;
+    font-weight: 600;
+}
+
+ul {
+    list-style-type: none;
+
+    display: flex;
+}
+
+li {
+    margin-left: 2em;
+
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+main {
+    padding: 5em;
+}
+
+.introduction {
+    padding: 7em;
+
+    display: flex;
+    align-items: center;
+}
+
+.description {
+    margin-left: 10em;
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.description h1 {
+    font-size: 2rem;
+    color: var(--light-blue);
+}
+
+.description h2 {
+    margin-top: 1em;
+
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: var(--beige);
+}
+
+.description p {
+    width: 780px;
+
+    margin-top: 1em;
+
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5em;
+    color: var(--beige);
+}
+
+.links {
+    margin-top: 2em;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:visited {
+    color: var(--dark-blue);
+}
+
+a:hover {
+    color: var(--light-blue);
+}
+
+button {
+    margin-right: 1em;
+    padding: 0.5em;
+
+    border-radius: 0.4em;
+    border: none;
+
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: var(--dark-blue);
+
+    background-color: var(--beige);
+}
+
+.competences {
+    margin-top: 5em;
+}
+
+.title {
+    font-size: 2rem;
+    font-weight: 600;
+    color: var(--light-blue);
+}
+
+.container-card {
+    margin-top: 3em;
+
+    display: flex;
+    justify-content: space-around;
+}
+
+.competences-card {
+    width: 33em;
+    height: 28em;
+
+    padding: 3em;
+
+    border-radius: 1em;
+
+    background-color: var(--beige);
+}
+
+.icon-text {
+    margin-top: 2em;
+    margin-left: 2em;
+    display: flex;
+}
+
+.icon-text h2 {
+    margin-left: 1.5em;
+
+    font-size: 1rem;
+    color: var(--dark-blue);
+}
+
+.title-card {
+    font-size: 1.5rem;
+    font-weight: 800;
+    color: var(--dark-blue);
+}
+
+.experiences {
+    margin-top: 8em;
+}
+
+.experience-card div {
+    width: 33em;
+    height: 29em;
+
+    position: relative;
+
+    padding: 2em;
+
+    border-radius: 1em;
+
+    background-color: var(--beige);
+}
+
+.experience-card h2 {
+    font-size: 1.5rem;
+    font-weight: 800;
+    color: var(--dark-blue);
+}
+
+.experience-card h3 {
+    margin-top: 0.5em;
+
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: var(--light-blue);
+}
+
+p {
+    margin-top: 0.8em;
+
+    font-size: 1rem;
+    font-weight: 800;
+    color: var(--dark-blue);
+}
+
+span {
+    position: absolute;
+    bottom: 1em;
+    left: 2em;
+
+    font-size: 1rem;
+    font-weight: 600;
+    text-align: center;
+    color: var(--light-blue);
+}
+
+.formations {
+    margin-top: 8em;
+}
+
+.formation-card div {
+    width: 33em;
+    height: 21em;
+
+    position: relative;
+
+    padding: 2em;
+
+    border-radius: 1em;
+
+    background-color: var(--beige);
+}
+
+.formation-card div h2 {
+    font-size: 1.5rem;
+    font-weight: 800;
+    color: var(--dark-blue);
+}
+
+.formation-card div h3 {
+    margin-top: 0.2em;
+
+    font-size: 1rem;
+    font-weight: 600;
+    color: var(--light-blue);
+}
+
+.projects {
+    margin-top: 14em;
+}
+
+.projects > h2 {
+    font-size: 2rem;
+    font-weight: 600;
+    text-align: center;
+    color: var(--light-blue);
+}
+
+hr {
+    width: 800px;
+    height: 0;
+    margin: 0 auto;
+    margin-top: 4em;
+
+    border: 2px solid var(--light-blue);
+    border-radius: 50%;
+}
+
+.projects > h3 {
+    margin-top: 3em;
+
+    font-size: 1.8rem;
+    font-weight: 600;
+    text-align: center;
+    color: var(--light-blue);
+}
+
+.projects > div {
+    margin-top: 5em;
+
+    display: grid;
+    justify-content: center;
+    gap: 3em;
+    grid-template-columns: repeat(3, 38em);
+    grid-template-rows: repeat(2, 32em);
+}
+
+.projects > div > div {
+    padding: 2em;
+
+    position: relative;
+
+    background-color: var(--dark-blue);
+    border-radius: 1em;
+}
+
+.projects > div > div h2 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: var(--light-blue);
+}
+
+.projects > div > div p {
+    margin-top: 1.5em;
+
+    font-weight: 400;
+    color: var(--beige);
+}
+
+.projects > div > div > button {
+    position: absolute;
+    bottom: 2em;
+    right: 0;
+}
+
+.mentor {
+    margin-top: 10em;
+}
+
+.mentor > h2 {
+    font-size: 2rem;
+    font-weight: 600;
+    text-align: center;
+    color: var(--light-blue);
+}
+
+.mentor div {
+    margin-top: 5em;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: var(--light-blue);
+}
+
+footer {
+    margin-top: 8em;
+    padding: 6em;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    border-top: 2px solid var(--light-blue);
+
+    background-color: var(--dark-blue);
+}
+
+footer h2 {
+    font-size: 2rem;
+    font-weight: 600; 
+    color: var(--light-blue);  
+}
+
+footer p {
+    margin-top: 3em;
+
+    font-size: 1.5rem;
+    font-weight: 600;
+    line-height: 2em;
+    text-align: center;
+    color: var(--light-blue);
+}
+
+footer div {
+    margin-top: 6em;
+}
+
+footer div img {
+    margin: 0 1em;
+}
