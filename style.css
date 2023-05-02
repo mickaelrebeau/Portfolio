@@ -111,6 +111,31 @@ a {
     text-decoration: none;
 }
 
+.nav {
+    transition: transform 0.2s ease-in;
+}
+
+.nav:hover {
+    transform: scale(1.1);
+}
+
+.nav:active {
+    transform: scale(0.9);
+    transition: transform 0.5s ease-in;
+}
+
+a.nav:link {
+    color: var(--beige); 
+}
+
+a.nav:visited {
+    color: var(--beige); 
+}
+
+a:link {
+    color: var(--beige);
+}
+
 a:visited {
     color: var(--dark-blue);
 }
@@ -387,4 +412,33 @@ footer div {
 
 footer div img {
     margin: 0 1em;
+}
+
+a >  .repo {
+    transition-duration: 500ms;
+}
+
+a:hover > .repo {
+    transform: translate(0, -2px);
+    transition-duration: 500ms;
+}
+
+a > h2 {
+    color: var(--light-blue);
+    transition-duration: 500ms;
+}
+
+a:hover > h2 {
+    color: var(--beige);
+    transform: translate(0, -10px);
+    transition-duration: 500ms;
+}
+
+a > img {
+    transition-duration: 500ms;
+}
+
+a:hover > img {
+    transform: translate(0, -10px);
+    transition-duration: 500ms;
 }
