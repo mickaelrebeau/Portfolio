@@ -97,7 +97,7 @@ main {
 }
 
 .description p {
-    width: 780px;
+    width: 100%;
 
     margin-top: 1em;
 
@@ -149,6 +149,7 @@ a.nav:hover {
     color: var(--light-blue);
 }
 
+.button,
 button {
     margin-right: 1em;
     padding: 0.5em;
@@ -182,9 +183,11 @@ button {
 
 .competences-card {
     width: 33em;
+    min-width: 23em;
     height: 28em;
 
     padding: 3em;
+    margin-left: 2em;
 
     border-radius: 1em;
 
@@ -216,11 +219,13 @@ button {
 
 .experience-card div {
     width: 33em;
+    min-width: 23em;
     height: 29em;
 
     position: relative;
 
     padding: 2em;
+    margin-left: 2em;
 
     border-radius: 1em;
 
@@ -238,7 +243,7 @@ button {
 
     font-size: 1.2rem;
     font-weight: 600;
-    color: var(--light-blue);
+    color: var(--dark-blue);
 }
 
 p {
@@ -257,7 +262,7 @@ span {
     font-size: 1rem;
     font-weight: 600;
     text-align: center;
-    color: var(--light-blue);
+    color: var(--dark-blue);
 }
 
 .formations {
@@ -266,11 +271,13 @@ span {
 
 .formation-card div {
     width: 33em;
+    min-width: 23em;
     height: 21em;
 
     position: relative;
 
     padding: 2em;
+    margin-left: 2em;
 
     border-radius: 1em;
 
@@ -288,7 +295,7 @@ span {
 
     font-size: 1rem;
     font-weight: 600;
-    color: var(--light-blue);
+    color: var(--dark-blue);
 }
 
 .projects {
@@ -327,7 +334,7 @@ hr {
     display: grid;
     justify-content: center;
     gap: 3em;
-    grid-template-columns: repeat(3, 38em);
+    grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(2, 32em);
 }
 
@@ -353,7 +360,7 @@ hr {
     color: var(--beige);
 }
 
-.projects > div > div > button {
+.projects > div > div > .button {
     position: absolute;
     bottom: 2em;
     right: 0;
@@ -587,6 +594,12 @@ a:hover > img {
         margin-bottom: 4em;
     }
 
+    .competences-card,
+    .experience-card > div,
+    .formation-card > div {
+        width: 100%;
+    }
+
     .projects {
         margin-top: 6em;
     }
@@ -600,7 +613,7 @@ a:hover > img {
         margin-bottom: 4em;
     }
 
-    .projects > div > div > button {
+    .projects > div > div > .button {
         bottom: 1em;
     }
 
