@@ -171,6 +171,7 @@ button {
 .title {
     font-size: 2rem;
     font-weight: 600;
+    text-align: center;
     color: var(--light-blue);
 }
 
@@ -178,7 +179,8 @@ button {
     margin-top: 3em;
 
     display: flex;
-    justify-content: space-around;
+    align-items: center;
+    justify-content: center;
 }
 
 .competences-card {
@@ -187,7 +189,7 @@ button {
     height: 28em;
 
     padding: 3em;
-    margin-left: 2em;
+    margin-left: 4em;
 
     border-radius: 1em;
 
@@ -225,7 +227,7 @@ button {
     position: relative;
 
     padding: 2em;
-    margin-left: 2em;
+    margin-left: 4em;
 
     border-radius: 1em;
 
@@ -277,7 +279,7 @@ span {
     position: relative;
 
     padding: 2em;
-    margin-left: 2em;
+    margin-left: 4em;
 
     border-radius: 1em;
 
@@ -368,19 +370,32 @@ hr {
 
 .mentor {
     margin-top: 10em;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.mentor img {
+    width: 66em;
+    height: auto;
+
+    margin-top: 2em;
 }
 
 .mentor > h2 {
-    font-size: 2rem;
+    font-size: 2.5rem;
     font-weight: 600;
     text-align: center;
     color: var(--light-blue);
 }
 
-.mentor div {
+.mentor > div > div {
     margin-top: 5em;
 
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: space-around;
 
