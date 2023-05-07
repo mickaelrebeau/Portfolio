@@ -140,15 +140,12 @@ a.nav:visited {
     color: var(--beige); 
 }
 
-a:link {
-    color: var(--beige);
-}
-
 a:visited {
     color: var(--dark-blue);
 }
 
-a:hover {
+a:hover,
+a.nav:hover {
     color: var(--light-blue);
 }
 
@@ -529,9 +526,17 @@ a:hover > img {
     .navigation input ~ ul {
         opacity: 0;
     }
+
+    .navigation input ~ ul li a {
+        display: none;
+    }
     
     .navigation input:checked ~ ul {
     opacity: 1;
+    }
+
+    .navigation input:checked ~ ul li a {
+        display: block;
     }
 
     .triangle {
@@ -544,6 +549,11 @@ a:hover > img {
     
         border-left: 25px solid transparent;
         border-bottom: 25px solid var(--light-blue);
+    }
+
+    a:hover,
+    a.nav:hover {
+        color: var(--beige);
     }
 
     main {
